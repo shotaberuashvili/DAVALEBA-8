@@ -1,0 +1,73 @@
+*.world{
+    width: 100%;
+    height: 600px;
+    background-image: url(../galery/New-York-City.jpg);
+    position: relative;
+}
+.moon{
+    width: 150px;
+    height: 150px;
+    background-image: url(../galery/Lunn-.png);
+    right: -200px;
+    top: 30px;
+    background-repeat: repeat-x;
+    animation: moon 12s infinite;
+    position: absolute;
+    z-index: 1;
+}
+@keyframes moon{
+    100%{
+        transform: translateX(-1800px);
+    }
+}
+.cloud{
+    width: 150px;
+    height: 150px;
+    background-image: url(../galery/cloud.png);
+    left: -200px;
+    top: 180px;
+    background-repeat: repeat-x;
+    animation: cloud 18s infinite;
+    position: absolute;
+    z-index: 2;
+}
+@keyframes cloud{
+    100%{
+        transform: translateX(1800px);
+    }
+}
+
+
+
+
+.street{
+    width: 250%;
+    height: 150px;
+    background-image: url(../galery/street.jpg);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: repeat-x;
+    animation: street 10s infinite;
+    position: relative;
+}
+@keyframes street{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.car{
+    width: 300px;
+    height: 150px;
+    background-image: url(../galery/car_concept-001.png);
+    left: -300px;
+    position: absolute;
+    background-repeat: repeat-x;
+    animation: car 10s infinite;
+    z-index: 1;
+}
+@keyframes car{
+    100%{
+        transform: translateX(3400px);
+    }
+}
